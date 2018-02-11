@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/images.css">
+    <link rel="stylesheet" href="style/paralax.css">
+    <title>Ollie's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Ollie Platt</h1>
+        </div>
+        <div class="paralax-container">
+            <!-- The alt tags here are empty as the images are decorative (W3C Technique H67) -->
+            <div class="paralax paralax-8">
+                <img alt="" src="image/paralax/8.png" />
+            </div>
+            <div class="paralax paralax-7">
+                <img alt="" src="image/paralax/7.png" />
+            </div>
+            <div class="paralax paralax-6">
+                <img alt="" src="image/paralax/6.png" />
+            </div>
+            <div class="paralax paralax-5">
+                <img alt="" src="image/paralax/5.png" />
+            </div>
+            <div class="paralax paralax-4">
+                <img alt="" src="image/paralax/4.png" />
+            </div>
+            <div class="paralax paralax-3">
+                <img alt="" src="image/paralax/3.png" />
+            </div>
+            <div class="paralax paralax-2">
+                <img alt="" src="image/paralax/2.png" />
+            </div>
+            <div class="paralax paralax-1">
+                <img alt="" src="image/paralax/front.png" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul class="nav-list">
+                <li>
+
+                    <div id="nav-home" class="nav-icon">
+                        <a>
+                            <div class="nav-label">HOME</div>
+                        </a>
+                    </div>
+
+                </li>
+                <li>
+                    <div id="nav-log" class="nav-icon">
+                        <a>
+                            <div class="nav-label">LOG</div>
+                        </a>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div id="nav-coursework" class="nav-icon">
+                        <a>
+                            <div class="nav-label">WORK</div>
+                        </a>
+                        <ul class="nav-flyout">
+                            <li>
+
+                                <div id="nav-intprog" class="nav-icon">
+                                    <a>
+                                        <div class="nav-label">INTPROG</div>
+                                    </a>
+                                </div>
+
+                            </li>
+                            <li>
+
+                                <div id="nav-indadd" class="nav-icon">
+                                    <a>
+                                        <div class="nav-label">INDADD</div>
+                                    </a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+            <a href="https://validator.w3.org/" class="w3c-validator">Validator</a>
+        </nav>
+        <article>
+            <h2>Research Log</h2>
+            <section>
+                <h3>Contents:</h3>
+                <p>Covering
+                    <a href="#a_markdown">markdown</a>,
+                    <a href="#a_markup">markup</a>,
+                    <a href="#a_style">style</a> and
+                    <a href="#a_other">more</a>.</p>
+            </section>
+            <section>
+                <h3 id="a_markdown">Markdown</h3>
+                <p>Markdown is a very simple method of defining rudamentary formatting. It is useful for environments where
+                    the editing is done in plaintext such as a forum post.</p>
+                <p>Headers are defined with a preceding hash (#), the amount of hashes determing the header type (1-6). H1 and
+                    H2 can also be defined by "underlining" the text with equals (=) or dash (-) respectively.</p>
+                <div class="preview">
+                    <pre class="view">
+#H1
+#H2
+#H3
+#H4
+#H5
+#H6
+
+H1
+==
+
+H2
+--
+                    </pre>
+                    <div class="view">
+                        <span style="font-size: 2em; margin: 0.67em 0;">H1</span>
+                        <span style="font-size: 1.5em; margin: 0.83em 0;">H2</span>
+                        <span style="font-size: 1.17em; margin: 1em 0;">H3</span>
+                        <span style="font-size: 1em; margin: 1.33em 0;">H4</span>
+                        <span style="font-size: .83em; margin: 1.67em 0;">H5</span>
+                        <span style="font-size: .67em; margin: 2.33em 0;">H6</span>
+
+                        <span style="font-size: 2em; margin: 0.67em 0;">H1</span>
+                        <span style="font-size: 1.5em; margin: 0.83em 0;">H2</span>
+                    </div>
+                </div>
+                <p>Emphasis (italics) can be added with single *asterisks* or _underscores_. Strong emphasis (bold) can be added
+                    with double **asterisks** or __underscores__. Finally, strikethrough can be added with double ~~tildes~~.</p>
+                <div class="preview">
+                    <pre class="view">
+*I am emphasised* and _so am I!_
+**I am strongly emphasised** and __so am I!__
+~~I was a mistake~~
+
+*__Everything__ ~~cannot~~ can be* **_mixed_!**
+                    </pre>
+                    <div class="view">
+                        <em>I am emphasised</em> and
+                        <em>so am I!</em>
+                        <br/>
+                        <strong>I am strongly emphasised</strong> and
+                        <strong>so am I!</strong>
+                        <br/>
+                        <del>I was a mistake</del>
+                        <br/>
+                        <br/>
+                        <em>
+                            <strong>Everything</strong>
+                            <del>cannot</del> can be</em>
+                        <strong>
+                            <em>mixed!</em>
+                        </strong>
+                    </div>
+                </div>
+                <p>Ordered lists are created with lines starting with a number, full stop and a space (0. ). The numbers are
+                    often independent of the number at the beginning of the line. Spaces can be added before the number to
+                    create sub lists. Unordered lists simply use an asterisk, a minus or a plus and a space (* )</p>
+                <div class="preview">
+                    <pre class="view">
+1. First Element
+2. Second Element
+5. Third Element (regardless of 5)
+    *. Unordered sublist
+    *. More sublist!
+                    </pre>
+                    <div class="view">
+                        <ol>
+                            <li>First Element</li>
+                            <li>Second Element</li>
+                            <li>Third Element (regardless of 5)
+                                <ul>
+                                    <li>Unordered sublist</li>
+                                    <li>More sublist!</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="a_markup">Markup</h3>
+                <p>Page Content...</p>
+            </section>
+            <section>
+                <h3 id="a_other">Other</h3>
+                <p>Page Content...</p>
+            </section>
+
+        </article>
+    </main>
+    <script src="script/global.js"></script>
+</body>
+
+
+</html>
