@@ -1,0 +1,24 @@
+.parallax-container .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform-origin: 0 0;
+}
+
+.parallax img {
+    height: 100%;
+}
+
+.parallax-1 img {
+    height: 200%;
+}
+
+.parallax-1 { transform: translateZ(-1px) scale(2); }
+.parallax-2 { transform: translateZ(-2px) scale(3); }
+.parallax-3 { transform: translateZ(-3px) scale(4); }
+.parallax-4 { transform: translateZ(-4px) scale(5); }
+.parallax-5 { transform: translateZ(-5px) scale(6); }
+.parallax-6 { transform: translateZ(-6px) scale(7); }
+.parallax-7 { transform: translateZ(-7px) scale(8); }
+.parallax-8 { transform: translateZ(-8px) scale(9); }

@@ -33,7 +33,7 @@ html header .title h1 {
     justify-content: center;
 }
 
-.paralax-container {
+.parallax-container {
     float: right;
     overflow: hidden;
     width: 11.25in;
@@ -167,5 +167,5 @@ main .view span {
 }
 
 @media (max-width: 9in) {
-    .paralaxContainer {}
+    .parallaxContainer {}
 }
