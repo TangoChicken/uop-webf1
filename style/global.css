@@ -71,12 +71,14 @@ main nav {
     width: 0.8in;
     height: 0.8in;
     background: #1e0309 50% 25% / 45% no-repeat;
+    line-height: 0;
 }
 
 .nav-icon a {
     padding-top: 0.05in;
     color: #ffbd1b;
     font-family: sans-serif;
+    font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
 }
@@ -90,22 +92,21 @@ main nav {
 
 .nav-flyout {
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: inline-block;
     overflow: hidden;
     width: auto;
+    max-width: 0;
     height: 0.8in;
-    padding: 0 0 0 0.2in;
-    margin: -0.25in 0 0 0.8in;
+    padding: 0;
+    margin: 0 0 0 0.8in;
     background: #1e0309;
     border-radius: 0 0.08in 0.08in 0;
     box-shadow: 0 0 0.05in 0px rgba(0, 0, 0, 1);
-    font-size: 1em;
-    line-height: 0.8in;
+    font-size: 0;
     list-style-type: none;
     white-space: nowrap;
-    transform: translateX(-100%);
-    transition: transform ease-in-out 0.25s;
+    transition: all ease-in-out 0.25s;
 }
 
 .nav-flyout li {
@@ -114,7 +115,8 @@ main nav {
 }
 
 .nav-list li:hover .nav-flyout {
-    transform: translateX(0);
+    max-width: 5in;
+    padding: 0 0 0 0.2in;
 }
 
 .nav-icon:hover {
@@ -125,12 +127,12 @@ main nav {
     color: #C9572C;
 }*/
 
-.w3c-validator{
+.w3c-validator {
     position: fixed;
     bottom: 0;
-    display:block;
-    width:0.8in;
-    color:#ffbd1b;
+    display: block;
+    width: 0.8in;
+    color: #ffbd1b;
     text-align: center;
 }
 
@@ -164,10 +166,10 @@ main .view {
     padding: 24px;
     margin-bottom: 1em;
     background: #DCDCDC;
-    border-radius: 5px;  
+    border-radius: 5px;
 }
 
-main .view span{
+main .view span {
     display: block;
     font-weight: bold;
 }
