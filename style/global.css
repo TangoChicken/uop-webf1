@@ -110,7 +110,12 @@ main nav {
     width: 1in;
 }
 
-.nav-list li:hover .nav-flyout {
+.nav-list li:hover .nav-flyout, .nav-icon a:focus + .nav-flyout{
+    max-width: 5in;
+    padding: 0 0 0 0.2in;
+}
+
+.nav-flyout:focus-within { /* Fix for edge not supporting focus-within */
     max-width: 5in;
     padding: 0 0 0 0.2in;
 }
