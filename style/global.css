@@ -165,6 +165,7 @@ main nav {
     height: 0.3in;
     width: 0.855in;
     background-image: url(../image/icon/html5.png);
+    background-size: cover;
 }
 
 main article {
