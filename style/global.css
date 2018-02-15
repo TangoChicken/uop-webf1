@@ -70,7 +70,8 @@ main nav {
     width: 0.8in;
     height: 0.8in;
     background: #1e0309 50% 25% / 45% no-repeat;
-    line-height: 0; /* Fix for misalignment in chrome */
+    line-height: 0;
+    /* Fix for misalignment in chrome */
 }
 
 .nav-icon a {
@@ -99,7 +100,8 @@ main nav {
     background: #1e0309;
     border-radius: 0 0.08in 0.08in 0;
     box-shadow: 0.05in 0.03in 0.1in 0px rgba(0, 0, 0, 0.6);
-    font-size: 0; /* Fix for misalignment in IE/Edge */
+    font-size: 0;
+    /* Fix for misalignment in IE/Edge */
     list-style-type: none;
     white-space: nowrap;
     transition: all ease-in-out 0.25s;
@@ -110,12 +112,19 @@ main nav {
     width: 1in;
 }
 
-.nav-list li:hover .nav-flyout, .nav-icon a:focus + .nav-flyout{
+.nav-list li:hover .nav-flyout, .nav-icon a:focus+.nav-flyout {
     max-width: 5in;
     padding: 0 0 0 0.2in;
 }
 
-.nav-flyout:focus-within { /* Fix for edge not supporting focus-within */
+.nav-focus {
+    /* For the Edge focus-within js */
+    max-width: 5in;
+    padding: 0 0 0 0.2in;
+}
+
+.nav-flyout:focus-within {
+    /* So the hover and normal focus work on Edge */
     max-width: 5in;
     padding: 0 0 0 0.2in;
 }
