@@ -44,6 +44,28 @@ html header .title h1 {
     perspective-origin: 0 0;
 }
 
+.parallax-container h1{
+  height: 100%;
+  width:100vw;
+  margin: 0;
+  color: #ffbd1b;
+  font-family: 'LemonMilk Bold';
+  font-size: 0.8in;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: none;
+float:right;
+justify-content: center;
+  -webkit-text-stroke: 0.06em #1e0309;
+text-shadow:
+    0.03em 0.03em 0 #1e0309,
+  -0.03em -0.03em 0 #1e0309,
+   0.03em -0.03em 0 #1e0309,
+   -0.03em 0.03em 0 #1e0309,
+    0.03em 0.03em 0 #1e0309;
+}
+
 main {
     display: flex;
     width: 100%;
@@ -180,6 +202,14 @@ main .view span {
     font-weight: bold;
 }
 
-@media (max-width: 9in) {
-    .parallaxContainer {}
+@media (max-width: 11.25in) {
+    .title h1{
+      width:0;
+    }
+    .parallax-container{
+      margin-left: -9in;
+    }
+    .parallax-container h1{
+      display:flex;
+    }
 }
