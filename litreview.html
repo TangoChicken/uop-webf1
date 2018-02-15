@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/images.css">
+    <link rel="stylesheet" href="style/parallax.css">
+    <title>WebF1 Coursework</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>UP857172</h1>
+        </div>
+        <div class="parallax-container">
+            <!-- The alt tags here are empty as the images are decorative (W3C Technique H67) -->
+            <div class="parallax parallax-8">
+                <img alt="" src="image/parallax/8.png" />
+            </div>
+            <div class="parallax parallax-7">
+                <img alt="" src="image/parallax/7.png" />
+            </div>
+            <div class="parallax parallax-6">
+                <img alt="" src="image/parallax/6.png" />
+            </div>
+            <div class="parallax parallax-5">
+                <img alt="" src="image/parallax/5.png" />
+            </div>
+            <div class="parallax parallax-4">
+                <img alt="" src="image/parallax/4.png" />
+            </div>
+            <div class="parallax parallax-3">
+                <img alt="" src="image/parallax/3.png" />
+            </div>
+            <div class="parallax parallax-2">
+                <img alt="" src="image/parallax/2.png" />
+            </div>
+            <div class="parallax parallax-1">
+                <img alt="" src="image/parallax/front.png" />
+            </div>
+            <h1>UP857172</h1>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <div id="nav-home" class="nav-icon">
+                        <a href="index.html">
+                            <div class="nav-label">HOME</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="nav-log" class="nav-icon">
+                        <a href="log.html">
+                            <div class="nav-label">LOG</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="nav-litreview" class="nav-icon">
+                        <a href="litreview.html">
+                            <div class="nav-label">REVIEW</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="nav-coursework" class="nav-icon">
+                        <a href="">
+                            <div class="nav-label">WORK</div>
+                        </a>
+                        <ul class="nav-flyout">
+                            <li>
+                                <div id="nav-car" class="nav-icon">
+                                    <a href="car.html">
+                                        <div class="nav-label">CAR</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="nav-intprog" class="nav-icon">
+                                    <a href="intprog.html">
+                                        <div class="nav-label">INTPROG</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="nav-indadd" class="nav-icon">
+                                    <a href="indadd.html">
+                                        <div class="nav-label">INDADD</div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <a href="https://validator.w3.org/check/referer" class="w3c-validator" title="W3C Validator"></a>
+        </nav>
+        <article>
+                <h2>Literature Review: Mitigating Corporate Information Exposure on the Web</h2>
+                <section>
+                <p>In the modern day, it is crucial for a business to have a presence on the internet. It has proven a valuable tool for finding new clients, and even as a base of operations for the company itself (such as e-commerce sites). With all the benefits, however, comes the large risk of opening the infrastructure of the company to the internet which is, by nature, insecure. In this review, I am going to research technical solutions to information exposure. Social engineering can play a big role in attacks, however, I am not going to cover the topic so that the technical aspects can be covered in more depth. Injection attacks are the number one web application security risk according to the Open Web Application Security Project <a href="https://paperpile.com/c/BGkFWo/zQsW/?locator=5">(van der Stock, Smithline, &amp; Gigler, 2017, p. 5)</a>. Between 2013 and 2017, injection has stayed in the top position and cross-site scripting (XSS) has fallen from third to seventh suggesting that the work done to prevent it is having an impact. I will be focussing on SQL injection and XSS due to the number of web applications vulnerable to injection and the likelihood of information being exposed by XSS attacks.</p>
+                <p>XSS is a common vulnerability in web applications, ranking as the 2nd most likely security vulnerability to affect users <a href="https://paperpile.com/c/BGkFWo/pCnC/?locator=169">(Nayeem Khan, Johari Abdullah, Adnan Shahid Kahn, 2017, p. 169). </a>The attacks can allow users to unknowingly execute malicious scripts or, more relevantly, allows session data to be stolen and can even expose encrypted SSL connections <a href="https://paperpile.com/c/BGkFWo/WpNL/?locator=230">(Selvamani, Duraisamy, &amp; Kannan, 2010, p. 230)</a>.</p>
+                <p>There are three categories of XSS attacks: persistent, where malicious code is stored in a database through a legitimate application (e.g. a post on a forum), DOM-injection and reflected/non-persistent; both of which let the browser execute malicious code (from response HTML for example). Each type requires a different approach to detect or prevent. A primitive method of detecting a persistent XSS attack is analysing the input data and performing basic checks, such as whether the string exceeds the character limit, followed by searching for specific tags to determine if a malicious payload is contained within <a href="https://paperpile.com/c/BGkFWo/pCnC+y2eB/?locator=171,813">(Das, Sharma, &amp; Bhattacharyya, 2015, p. 813; Nayeem Khan, Johari Abdullah, Adnan Shahid Kahn, 2017, p. 171).</a></p>
+                <p>A client-side solution called Noxes <a href="https://paperpile.com/c/BGkFWo/3bG0">(Kirda, Kruegel, Vigna, &amp; Jovanovic, 2006) </a>uses a firewall system to block unexpected connections, thus preventing stolen data from being sent back to the attacker. It works as a proxy that fetches requests on behalf of the browser and analyses the response for external links. This method only works to prevent data being stolen as the malicious code is still executed, so a denial of service attack (such as the browser window being closed) is not stopped.</p>
+                <p>Noncespaces is a more novel approach that uses randomization to completely remove XSS threats <a href="https://paperpile.com/c/BGkFWo/G61r">(Van Gundy &amp; Chen, 2012). </a>This technique randomises the HTML tags and their attributes in each document before the client displays the page. This allows the browser to detect injected code, as the attacker would not be able to know the random mapping of tags in that document, and therefore remove it before it executes.</p>
+                <p>JSand is a more general approach to XSS prevention by increasing the security of the JavaScript sandbox <a href="https://paperpile.com/c/BGkFWo/bEK6">(Agten et al., 2012). </a>It is a server-driven JavaScript sandboxing framework that requires no browser modifications and is enforced client side, making it easily deployable (unlike Noxes, for example). It isolates objects and functions, keeping track of all operations performed and checking them against a server-set security policy before allowing or blocking the operation.</p>
+                <p>Structured Query Language (SQL) injection attacks are another common vulnerability in web applications, specifically targeted at the databases connected to the app. Out of the three major injection attacks (SQL, OS, and LDAP), SQL remains the most common. There are several different forms of SQL injection attacks (SQLIAs), however, most of these are quite simple to prevent. These &quot;classical&quot;? forms of injection are all similar in how they hijack a legitimate SQL query to execute commands on the server or to gain information from the database. As such, they can mostly be avoided by sanitising input. A basic way of achieving this is to use prepared statements, SQL queries that have been precompiled with bind variables allowing for data to be input at a later time <a href="https://paperpile.com/c/BGkFWo/4tVP/?locator=2">(Thomas &amp; Williams, 2007, p. 2)</a>.</p>
+                <p>Another example of this is SAFELI, a query safety screen that checks for suspicious keywords in the query (like &quot;or&quot;? or &quot;drop&quot;?) along with escaping control characters such as the double and single quote <a href="https://paperpile.com/c/BGkFWo/GtjB/?locator=34">(Fu &amp; Qian, 2008, p. 34). </a>Modern SQLIAs are more advanced and take advantage of vulnerabilities in the systems surrounding the database.</p>
+                <p>Amnesia is a tool that detects and prevents SQLIAs by monitoring the inputs of a system and building a model of all possible SQL queries that could be generated at each. At runtime, it compares the queries against the model and rejects any that violate it <a href="https://paperpile.com/c/BGkFWo/JRto/?locator=796-797">(Halfond &amp; Orso, 2006, pp. </a><a href="https://paperpile.com/c/BGkFWo/JRto/?locator=796-797">796–797).</a><a href="https://paperpile.com/c/BGkFWo/JRto/?locator=796-797"> </a>This model is not perfect and can generate false positives or negatives, however, it is fully automated.</p>
+                <p>Another automated form of protection against SQLIAs is RT-WASP <a href="https://paperpile.com/c/BGkFWo/2d2T">(Salih &amp; Samad, 2016)</a>. RT-WASP is an improvement of R-WASP and WASP (standing for Real-Time Web Application SQLI Protector). The tool uses &quot;positive tainting&quot;? to mark, in real time, the query strings as trusted at a character level. Before the query is sent to the database, evaluation of the string takes place and blocks all queries that contain one or more unmarked characters (that are part of keywords and operators).</p>
+                <p>A growing trend in modern technology is artificial intelligence and the rise of machine learning. This has been applied to SQLI detection using the Naïve Bayes</p>
+                <p>machine learning algorithm <a href="https://paperpile.com/c/BGkFWo/Q5gx/?locator=1112">(Joshi &amp; Geetha, 2014, p. 1112)</a>. The algorithm is trained on a large dataset of malicious and non-malicious queries, allowing it to calculate the likelihood of a new query being malicious and taking action if needed. It has proven to be relatively accurate (peaking at 93.3% accuracy) but is overshadowed by simpler alternatives such as Amnesia.</p>
+                <p>Unfortunately, there is no ultimate solution to the problem of information exposure. The proposed solutions I covered here all have their advantages, but with those come caveats and vulnerabilities of their own. Lasting protection requires active maintenance and a varied set of tools that can adapt to the ever-evolving attacks on the web.</p>
+                </section>
+                <section>
+                <h3>References:</h3>
+                <p><a href="http://paperpile.com/b/BGkFWo/bEK6">Agten, P., Van Acker, S., Brondsema, Y., Phung, P. H., Desmet, L., &amp; Piessens, F. (2012). JSand: complete </a><a href="http://paperpile.com/b/BGkFWo/bEK6">client-side</a><a href="http://paperpile.com/b/BGkFWo/bEK6"> sandboxing of </a><a href="http://paperpile.com/b/BGkFWo/bEK6">third-party</a><a href="http://paperpile.com/b/BGkFWo/bEK6"> JavaScript without browser modifications. In </a><a href="http://paperpile.com/b/BGkFWo/bEK6"><SPAN class="ft6">Proceedings of the 28th Annual Computer Security Applications Conference on - ACSAC ’12 </SPAN></a><a href="http://paperpile.com/b/BGkFWo/bEK6">(p. 1). New York, New York, USA: ACM Press.</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/y2eB">Das, D., Sharma, U., &amp; Bhattacharyya, D. K. (2015). Detection of </a><a href="http://paperpile.com/b/BGkFWo/y2eB">Cross-Site</a><a href="http://paperpile.com/b/BGkFWo/y2eB"> Scripting Attack under Multiple Scenarios. </a><a href="http://paperpile.com/b/BGkFWo/y2eB"><SPAN class="ft8">Computer Journal</SPAN></a><a href="http://paperpile.com/b/BGkFWo/y2eB">, </a><a href="http://paperpile.com/b/BGkFWo/y2eB"><SPAN class="ft8">58</SPAN></a><a href="http://paperpile.com/b/BGkFWo/y2eB">(4), </a><a href="http://paperpile.com/b/BGkFWo/y2eB">808–822.</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/GtjB">Fu, X., &amp; Qian, K. (2008). SAFELI – SQL Injection Scanner Using Symbolic Execution. Retrieved from </a><a href="http://www.cs.umd.edu/~pugh/ISSTA08/tav2008/papers/p34-fu.pdf">http://www.cs.umd.edu/~pugh/ISSTA08/tav2008/papers/p34-fu.pdf</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/JRto">Halfond, W. G. J., &amp; Orso, A. (2006). Preventing SQL injection attacks using AMNESIA. In </a><a href="http://paperpile.com/b/BGkFWo/JRto"><SPAN class="ft6">Proceeding of the 28th international conference on Software engineering - ICSE ’06</SPAN></a><a href="http://paperpile.com/b/BGkFWo/JRto">. </a><a href="http://dx.doi.org/10.1145/1134285.1134416">https://doi.org/10.1145/1134285.1134416</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/Q5gx">Joshi, A., &amp; Geetha, V. (2014). SQL Injection detection using machine learning. In </a><a href="http://paperpile.com/b/BGkFWo/Q5gx"><SPAN class="ft10">2014 International Conference on Control, Instrumentation, Communication and Computational Technologies (ICCICCT)</SPAN></a><a href="http://paperpile.com/b/BGkFWo/Q5gx">. </a><a href="http://dx.doi.org/10.1109/iccicct.2014.6993127">https://doi.org/10.1109/iccicct.2014.6993127</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/3bG0">Kirda, E., Kruegel, C., Vigna, G., &amp; Jovanovic, N. (2006). Noxes. In </a><a href="http://paperpile.com/b/BGkFWo/3bG0"><SPAN class="ft10">Proceedings of the 2006 ACM symposium on Applied computing - SAC ’06</SPAN></a><a href="http://paperpile.com/b/BGkFWo/3bG0">. </a><a href="http://dx.doi.org/10.1145/1141277.1141357">https://doi.org/10.1145/1141277.1141357</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/pCnC">Nayeem Khan, Johari Abdullah, Adnan Shahid Kahn. (2017). A Taxonomy Study of XSS Vulnerabilities. </a><a href="http://paperpile.com/b/BGkFWo/pCnC"><SPAN class="ft12">Asian Journal of Information Technology</SPAN></a><a href="http://paperpile.com/b/BGkFWo/pCnC">, </a><a href="http://paperpile.com/b/BGkFWo/pCnC">169–177.</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/2d2T">Salih, N., &amp; Samad, A. (2016). Protection Web Applications using </a><a href="http://paperpile.com/b/BGkFWo/2d2T">Real-Time</a><a href="http://paperpile.com/b/BGkFWo/2d2T"> Technique to Detect Structured Query Language Injection Attacks. </a><a href="http://paperpile.com/b/BGkFWo/2d2T"><SPAN class="ft10">International Journal of Computer Applications in Technology</SPAN></a><a href="http://paperpile.com/b/BGkFWo/2d2T">, </a><a href="http://paperpile.com/b/BGkFWo/2d2T"><SPAN class="ft10">149</SPAN></a><a href="http://paperpile.com/b/BGkFWo/2d2T">(6), </a><a href="http://paperpile.com/b/BGkFWo/2d2T">26–32.</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/WpNL">Selvamani, K., Duraisamy, A., &amp; Kannan, A. (2010). Protection of Web Applications from </a><a href="http://paperpile.com/b/BGkFWo/WpNL">Cross-Site</a><a href="http://paperpile.com/b/BGkFWo/WpNL"> Scripting Attacks in Browser Side. </a><a href="http://paperpile.com/b/BGkFWo/WpNL"><SPAN class="ft10">International Journal of Computer Science and Information Security</SPAN></a><a href="http://paperpile.com/b/BGkFWo/WpNL">, </a><a href="http://paperpile.com/b/BGkFWo/WpNL"><SPAN class="ft10">7</SPAN></a><a href="http://paperpile.com/b/BGkFWo/WpNL">(3), </a><a href="http://paperpile.com/b/BGkFWo/WpNL">229–236.</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/4tVP">Thomas, S., &amp; Williams, L. (2007). Using Automated Fix Generation to Secure SQL Statements. In </a><a href="http://paperpile.com/b/BGkFWo/4tVP"><SPAN class="ft10">Third International Workshop on Software Engineering for Secure Systems (SESS’07: ICSE Workshops 2007)</SPAN></a><a href="http://paperpile.com/b/BGkFWo/4tVP">. </a><a href="http://dx.doi.org/10.1109/sess.2007.12">https://doi.org/10.1109/sess.2007.12</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/zQsW">van der Stock, A., Smithline, N., &amp; Gigler, T. (2017, October 20). OWASP Top 10 2017 RC2. </a><a href="http://paperpile.com/b/BGkFWo/zQsW"><SPAN class="ft6">OWASP</SPAN></a><a href="http://paperpile.com/b/BGkFWo/zQsW">. Retrieved from </a><a href="https://github.com/OWASP/Top10/blob/master/2017/OWASP%20Top%2010%202017%20GM%20(en).pdf">https://github.com/OWASP/Top10/blob/master/2017/OWASP%20Top%2010%202017% 20GM%20(en).pdf</a></p>
+                <p><a href="http://paperpile.com/b/BGkFWo/G61r">Van Gundy, M., &amp; Chen, H. (2012). Noncespaces: Using randomization to defeat cross </a><a href="http://paperpile.com/b/BGkFWo/G61r">-site</a><a href="http://paperpile.com/b/BGkFWo/G61r"> scripting attacks. </a><a href="http://paperpile.com/b/BGkFWo/G61r"><SPAN class="ft8">Computers &amp; Security</SPAN></a><a href="http://paperpile.com/b/BGkFWo/G61r">, </a><a href="http://paperpile.com/b/BGkFWo/G61r"><SPAN class="ft8">31</SPAN></a><a href="http://paperpile.com/b/BGkFWo/G61r">(4), </a><a href="http://paperpile.com/b/BGkFWo/G61r">612–628.</a></p>
+                </section>
+        </article>
+    </main>
+    <script src="script/global.js"></script>
+</body>
+
+
+</html>

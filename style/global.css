@@ -31,7 +31,7 @@ html header .title h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding:0.2in;
+    padding:0 0.2in;
 }
 
 .parallax-container {
@@ -69,6 +69,7 @@ text-shadow:
 main {
     display: flex;
     width: 100%;
+    min-height: calc(100vh - 2.5in);
     background: #1e0309;
     font-family: sans-serif;
     justify-content: space-between;
@@ -203,6 +204,12 @@ main .view {
 main .view span {
     display: block;
     font-weight: bold;
+}
+
+.video{
+    width:100%;
+    max-width: 852px;
+    height:auto;
 }
 
 @media (max-width: 11.25in) {
