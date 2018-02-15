@@ -31,6 +31,7 @@ html header .title h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding:0.2in;
 }
 
 .parallax-container {
@@ -57,7 +58,6 @@ html header .title h1 {
   display: none;
 float:right;
 justify-content: center;
-  -webkit-text-stroke: 0.06em #1e0309;
 text-shadow:
     0.03em 0.03em 0 #1e0309,
   -0.03em -0.03em 0 #1e0309,
@@ -85,6 +85,7 @@ main nav {
     padding: 0;
     margin-top: 0.08in;
     list-style-type: none;
+    height:97%
 }
 
 .nav-icon {
@@ -157,11 +158,13 @@ main nav {
 
 .w3c-validator {
     position: fixed;
-    bottom: 0;
     display: block;
-    width: 0.8in;
+    bottom: 0;
     color: #ffbd1b;
     text-align: center;
+    height: 0.3in;
+    width: 0.855in;
+    background-image: url(../image/icon/html5.png);
 }
 
 main article {
