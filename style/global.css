@@ -207,9 +207,22 @@ main .view span {
     height: auto;
 }
 
-.patchPic{
+.pic{
     width:100%;
-    max-width:906px;
+}
+
+.download{
+    height: 0.8in;
+    display: inline-flex;
+    background-color: gainsboro;
+    padding: 0.1in 0.2in 0.1in 0.1in;
+    border-radius: 0.1in;
+    width: auto;
+    align-items: center;
+}
+
+.download img{
+    height: 100%;
 }
 
 article {
@@ -219,6 +232,11 @@ article {
 
 article section, article>p {
     max-width: 11in;
+}
+
+figcaption{
+    font-style: italic;
+    font-weight: bold;
 }
 
 @media (max-width: 11.25in) {

@@ -5,3 +5,9 @@
 #nav-car { background-image: url(../image/icon/coursework.svg); }
 #nav-intprog { background-image: url(../image/icon/coursework.svg); }
 #nav-indadd { background-image: url(../image/icon/coursework.svg); }
+
+#intprog-patch{ max-width:906px; }
+
+#car-house{ max-width: 717px; }
+#car-circuit{ max-width: 1123px; }
+#car-universal{ max-width: 1221px; }

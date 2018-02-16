@@ -103,31 +103,49 @@
             <a href="https://validator.w3.org/check/referer" class="w3c-validator" title="W3C Validator"></a>
         </nav>
         <article>
-            <h2>Introduction to Programming (INTPROG)</h2>
-            <p>This unit covers the very basic concepts of computer programming. It begins with Python, where programming techniques
-                are taught up to creating an interactive graphics window. These skills are then transitioned into Java.</p>
+            <h2>Computer Architecture (CAR)</h2>
+            <p>This unit is an introduction to the basics of the logical structure of computer systems, covering the logic and
+                theory that computing systems use. This includes binary arithmetic and logic (gates, boolean logic, and simplification)
+                and CPU design.</p>
             <section>
-                <h3>Python Coursework</h3>
-                <p>This courswork involved making various "patches" in the graphics window. They had to be designed and ordered
-                    based on the last three digits of our student number (with 857172 I had "bottom-left triangle" shape,
-                    zig-zags for the first shape and radial lines for the second).</p>
-                <p>
-                    The user would be asked for input on the size (either 5x5, 7x7, 9x9 or 11x11 patches) and then on the three different colours
-                    the patches should be generated with.
+                <h3>Coursework 1 - Intrusion Detection System</h3>
+                <p>This coursework was designed as practice for the boolean logic we had been learning. We had to design a logic
+                    circuit that would sound alarms or lights if certain criteria were met.</p>
+                <figure>
+                    <img class="pic" id="car-house" src="image/car/houseic.png" alt="Floor plan of the house our circuit was protecting">
+                    <figcaption>
+                        The floor plan of the house our circuit had to protect.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="pic" id="car-circuit" src="image/car/housecircuit.png" alt="Logicly design of our circuit">
+                    <figcaption>
+                        A screen-cap of our circuit design from Logic.ly
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h3>Coursework 2 - Optimisation</h3>
+                <p>We now had to optimise our design from the original coursework using Karnaugh maps and boolean algebraic
+                    rules and laws; this didn't affect our design as it was already optimised in the first coursework. Another
+                    part of this coursework was to convert our circuit to use one universal gate, we used the NAND gate.
                 </p>
-                <picture>
-                    <source media="(min-width: 906px)" srcset="image/intprog/patches9.png">
-                    <source media="(min-width: 706px)" srcset="image/intprog/patches7.png">
-                    <source srcset="image/intprog/patches5.png">
-
-                    <img class="pic" id="intprog-patch" src="image/intprog/patches5.png" alt="The patch design I had to make">
-                </picture>
-                <a href="dl/python/Coursework1.py"><div class="download"><img src="image/icon/python.png">Coursework Project</div></a>
-                <a href="dl/python/graphics.py"><div class="download"><img src="image/icon/python.png">Required Graphics Module</div></a>
+                <figure>
+                        <img class="pic" id="car-universal" src="image/car/universal.png" alt="Universal gate conversion of our circuit">
+                        <figcaption>
+                            A screen-cap of our design using only the NAND gate from Logic.ly
+                        </figcaption>
+                    </figure>
+            </section>
+            <section>
+                <h3>Coursework 3 - Designing an Adder/Subtractor Machine</h3>
+                <p>This coursework involved designing a poster to illustrate how a CPU performs the arithmetic operations of addition and subtraction. It had to include fetch-execute cycles and be based off von Neumann architecture.</p>
+                <a href="dl/CAR_Poster.pdf"><div class="download"><img src="image/icon/file-pdf.png">Final Poster Design</div></a>
             </section>
         </article>
     </main>
     <script src="script/global.js"></script>
 </body>
+
 
 </html>
