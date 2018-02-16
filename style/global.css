@@ -219,6 +219,7 @@ main .view span {
     border-radius: 0.1in;
     width: auto;
     align-items: center;
+    margin: 0.05in;
 }
 
 .download img{
