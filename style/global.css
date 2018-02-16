@@ -207,12 +207,17 @@ main .view span {
     height: auto;
 }
 
+.patchPic{
+    width:100%;
+    max-width:906px;
+}
+
 article {
     overflow-wrap: break-word;
     min-width: 0;
 }
 
-article section {
+article section, article>p {
     max-width: 11in;
 }
 

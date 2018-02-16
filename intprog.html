@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/images.css">
+    <link rel="stylesheet" href="style/parallax.css">
+    <title>WebF1 Coursework</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>UP857172</h1>
+        </div>
+        <div class="parallax-container">
+            <!-- The alt tags here are empty as the images are decorative (W3C Technique H67) -->
+            <div class="parallax parallax-8">
+                <img alt="" src="image/parallax/8.png" />
+            </div>
+            <div class="parallax parallax-7">
+                <img alt="" src="image/parallax/7.png" />
+            </div>
+            <div class="parallax parallax-6">
+                <img alt="" src="image/parallax/6.png" />
+            </div>
+            <div class="parallax parallax-5">
+                <img alt="" src="image/parallax/5.png" />
+            </div>
+            <div class="parallax parallax-4">
+                <img alt="" src="image/parallax/4.png" />
+            </div>
+            <div class="parallax parallax-3">
+                <img alt="" src="image/parallax/3.png" />
+            </div>
+            <div class="parallax parallax-2">
+                <img alt="" src="image/parallax/2.png" />
+            </div>
+            <div class="parallax parallax-1">
+                <img alt="" src="image/parallax/front.png" />
+            </div>
+            <h1>UP857172</h1>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <div id="nav-home" class="nav-icon">
+                        <a href="index.html">
+                            <div class="nav-label">HOME</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="nav-log" class="nav-icon">
+                        <a href="log.html">
+                            <div class="nav-label">LOG</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="nav-litreview" class="nav-icon">
+                        <a href="litreview.html">
+                            <div class="nav-label">REVIEW</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div id="nav-coursework" class="nav-icon">
+                        <a href="">
+                            <div class="nav-label">WORK</div>
+                        </a>
+                        <ul class="nav-flyout">
+                            <li>
+                                <div id="nav-car" class="nav-icon">
+                                    <a href="car.html">
+                                        <div class="nav-label">CAR</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="nav-intprog" class="nav-icon">
+                                    <a href="intprog.html">
+                                        <div class="nav-label">INTPROG</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="nav-indadd" class="nav-icon">
+                                    <a href="indadd.html">
+                                        <div class="nav-label">INDADD</div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <a href="https://validator.w3.org/check/referer" class="w3c-validator" title="W3C Validator"></a>
+        </nav>
+        <article>
+            <h2>Introduction to Programming (INTPROG)</h2>
+            <p>This unit covers the very basic concepts of computer programming. It begins with Python, where programming techniques
+                are taught up to creating an interactive graphics window. These skills are then transitioned into Java.</p>
+            <section>
+                <h3>Python Coursework</h3>
+                <p>This courswork involved making various "patches" in the graphics window. They had to be designed and ordered
+                    based on the last three digits of our student number (with 857172 I had "bottom-left triangle" shape,
+                    zig-zags for the first shape and radial lines for the second).</p>
+                <p>
+                    The user would be asked for input on the size (either 5x5, 7x7, 9x9 or 11x11 patches) and then on the three different colours
+                    the patches should be generated with.
+                </p>
+                <picture>
+                    <source media="(min-width: 906px)" srcset="image/intprog/patches9.png">
+                    <source media="(min-width: 706px)" srcset="image/intprog/patches7.png">
+                    <source srcset="image/intprog/patches5.png">
+
+                    <img class="patchPic" src="image/intprog/patches5.png" alt="The patch design I had to make">
+                </picture>
+            </section>
+        </article>
+    </main>
+    <script src="script/global.js"></script>
+</body>
+
+</html>
