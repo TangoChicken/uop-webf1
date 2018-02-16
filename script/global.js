@@ -19,12 +19,12 @@ function supportsFocusWithin() {
 
 function focusClass(e, f) {
     e.cancelBubble = true;
-    if (typeof e.srcElement !== 'undefined' && e.srcElement !== null) {
+    try {
         let p = e.srcElement.closest("ul");
         if (p.classList.contains("nav-flyout")) {
             f ? p.classList.add("nav-focus") : p.classList.remove("nav-focus");
         }
-    }
+    } catch (e) { }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
