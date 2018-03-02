@@ -208,11 +208,11 @@ main .view span {
     height: auto;
 }
 
-.pic{
-    width:100%;
+.pic {
+    width: 100%;
 }
 
-.download{
+.download {
     height: 0.8in;
     display: inline-flex;
     background-color: gainsboro;
@@ -223,7 +223,7 @@ main .view span {
     margin: 0.05in;
 }
 
-.download img{
+.download img {
     height: 100%;
 }
 
@@ -236,7 +236,7 @@ article section, article>p {
     max-width: 11in;
 }
 
-figcaption{
+figcaption {
     font-style: italic;
     font-weight: bold;
 }
@@ -250,5 +250,14 @@ figcaption{
     }
     .parallax-container h1 {
         display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    main article {
+        padding: 0.25in;
+    }
+    figure {
+        margin: 0;
     }
 }

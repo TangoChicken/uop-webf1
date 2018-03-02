@@ -110,7 +110,8 @@
                     <a href="#a_markdown">markdown</a>,
                     <a href="#a_style">style</a>,
                     <a href="#a_flexbox">flexbox</a>,
-                    <a href="#a_parallax">parallax</a>.</p>
+                    <a href="#a_parallax">parallax</a>,
+                    <a href="#a_parallax">CSS combinators</a>.</p>
             </section>
             <section>
                 <h3 id="a_markdown">Markdown</h3>
@@ -233,6 +234,33 @@ H2
                     displaying in had scrolled out of view so quickly that it is hard to distinguish the individual movement
                     of the layers. On mobile where most of the top half of the screen is covered by the header image it is
                     much easier to see.
+                </p>
+            </section>
+            <section>
+                <h3 id="a_combinators">CSS Combinators</h3>
+                <p>When I was adding interactivity to my navigation bar I found that simple CSS selectors (namely group and
+                    descendant) couldn’t achieve what I was hoping for. A group of selectors (A, B) selects any element matching
+                    A and/or B. After some research I found combinators, selectors based on the relationships between elements
+                    (using the family model). The most common combinator is descendant (A B), this select any element matching
+                    B that is a descendant of A (a child, grandchild, etc). There are three other combinators, the child
+                    selector, the adjacent sibling selector and the general sibling selector. The child selector (A > B)
+                    will select any element matching B that is a direct child of A (so no grandchildren). The adjacent sibling
+                    selector (A + B) will select any element matching B that is the next sibling of A (if A has two siblings
+                    matching B only the one closest to A in the markup will be selected). The general sibling selector (A
+                    ~ B) will select any element matching B that is one of the next siblings of A. </p>
+                <p>For my use case, the adjacent sibling selector was what I needed in order to add tab functionality to the
+                    navigation bar. As the hover for the flyout used an element other than an anchor I needed a way to have
+                    A as the anchor (as tab will cycle through anchor tags) and B as the flyout. </p>
+                <p>In order for the flyout to stay open when tabbed within I needed to find a way to select the a parent of
+                    the anchor tags within the flyout. I couldn’t find any solution and was worried that I would have to
+                    rely on Javascript for what I would consider core functionality of the website. I then found a nifty
+                    little pseudo-element in the CSS4 working draft called “focus-within” which seemed to be made exactly
+                    for this purpose. Considering it is in the CSS level 4 working draft it has pretty good implementation
+                    in updated versions of modern browsers (except Edge, but what were you expecting). Unfortunately as it
+                    is not part of the CSS3 spec it causes current CSS validators to error meaning that the global stylesheet
+                    does not validate. However, this project isn’t being marked on whether the CSS validates and as the CSS
+                    doesn’t break in browsers where focus-within isn’t supported I don’t see a problem with this. I did end
+                    up implementing a javascript polyfill so that edge would get the functionality too.
                 </p>
             </section>
         </article>
