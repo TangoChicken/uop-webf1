@@ -108,9 +108,9 @@
                 <h3>Contents:</h3>
                 <p>Covering
                     <a href="#a_markdown">markdown</a>,
-                    <a href="#a_markup">markup</a>,
-                    <a href="#a_style">style</a> and
-                    <a href="#a_other">more</a>.</p>
+                    <a href="#a_style">style</a>,
+                    <a href="#a_flexbox">flexbox</a>,
+                    <a href="#a_parallax">parallax</a>.</p>
             </section>
             <section>
                 <h3 id="a_markdown">Markdown</h3>
@@ -199,12 +199,41 @@ H2
                 </div>
             </section>
             <section>
-                <h3 id="a_markup">Markup</h3>
+                <h3 id="a_other">Other</h3>
                 <p>Page Content...</p>
             </section>
             <section>
-                <h3 id="a_other">Other</h3>
-                <p>Page Content...</p>
+                <h3 id="a_flexbox">Flexbox</h3>
+                <p>The Flexible Box Module, or “Flexbox” is a responsive layout model introduced in CSS3. It is a powerful tool
+                    that offers space distribution and alignment between elements. I have found it very useful in the development
+                    of my site, having never really used it before. It makes some seemingly basic tasks actually simple to
+                    achieve where it would have been difficult with the previous layout modes of block, inline table and
+                    positioned. For example, centering a dynamic element vertically was a notoriously difficult task to achieve
+                    with only elegant css without using properties such as transform which had very little compatibility.</p>
+                <p>It can be used on individual elements (e.g. the vertical alignment) or on entire pages to align content dynamically
+                    with page size to avoid excessive use of media queries.</p>
+                <p>I found the
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks Complete Guide to Flexbox</a>
+                    a very useful page to refer to when learning how to use it.</p>
+            </section>
+            <section>
+                <h3 id="a_parallax">Parallax Effect</h3>
+                <p>I decided I wanted to experiment with 3D transform to create a parallax effect on my site, taking inspiration
+                    from the FireWatch website.
+                    <a href="https://developers.google.com/web/updates/2016/12/performant-parallaxing">Google provided a nice little article</a>
+                    explaining how to correctly scale the images so that even though they are “further away” in the z-axis, they appear the same
+                    size creating a fake parallax effect. Unfortunately I was unable to get my parallax effect working properly
+                    without using a scroll event to actually move it, this is due to me wanting it positioned in the top
+                    left rather than taking up the entire width of the page.</p>
+                <p>Given more time I would like to improve this so that it is 100% CSS based, as of right now the effect takes
+                    advantage of hardware acceleration as all the movement calculations are done with CSS transformations.
+                    As mentioned in the Google article, the scroll event is provided as a “best attempt” which means that
+                    on lower powered devices (especially noticeable on mobile) the parallax effect stutters. Once the effect
+                    was implemented I realised that it was barely noticable on desktop computers as the small window it was
+                    displaying in had scrolled out of view so quickly that it is hard to distinguish the individual movement
+                    of the layers. On mobile where most of the top half of the screen is covered by the header image it is
+                    much easier to see.
+                </p>
             </section>
         </article>
     </main>
