@@ -1,7 +1,7 @@
 # UoP WebF1 Coursework
 This is the source of my Web Foundations 1 portfolio coursework.
 
-The site can be found at https://tangochicken.github.io/UoP_WebF1!
+The site can be found at https://tangochicken.github.io/uop-webf1!
 
 ## Attributions
 * Parallax images modified from "[The 25th Hour](http://louie.co.nz/25th_hour/)" by [Louis Coyle](http://louie.co.nz/).
